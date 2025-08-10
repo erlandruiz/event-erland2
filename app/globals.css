@@ -38,6 +38,93 @@
   --color-tertiary-hover: #24252c;
 
   --color-grey: #737373;
+
+  --bg-hero-1: url("/assets/hero/hero-bg1.png");
+  --bg-hero-2: url("/assets/hero/hero-bg2.png");
+  --bg-pattern: url("/assets/pattern_bg.png");
+}
+
+body{
+  background-color: var(--color-primary);
+  color: white;
+  font-family: var(--font-poppins);
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6{
+  font-family: var(--font-poppins);
+}
+/* 
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-poppins);
+} */
+
+.h1 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 700; /* font-bold */
+  line-height: 2.5rem; /* default line-height for text-4xl */
+  text-transform: uppercase;
+}
+.h2 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  line-height: 1.2; /* leading-[120%] */
+}
+.h3 {
+  font-size: 32px;           /* text-[32px] */
+  line-height: 1.1;          /* leading-[110%] */
+  font-weight: 500;          /* font-medium */
+}
+
+.h4 {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem; /* default line-height for text-lg */
+}
+
+/* Estilos para .pretitle */
+.pretitle {
+  font-family: var(--font-caveat); /* font-caveat */
+  font-size: 2.25rem; /* text-4xl */
+  line-height: 1.1; /* leading-[110%] */
+  color: var(--color-accent); /* text-accent */
+}
+
+/* Estilos para .btn */
+.btn {
+  min-width: 112px;
+  height: 48px;
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.25rem; /* default line-height for text-sm */
+  font-weight: 500; /* font-medium */
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Estilos específicos para botones con variantes de color */
+.btn-accent {
+  background-color: var(--color-accent);
+}
+.btn-accent:hover {
+  background-color: var(--color-accent-hover);
+}
+.btn-secondary {
+  background-color: var(--color-secondary);
+}
+
+/* Si quieres un efecto de hover para btn-secondary, agrégalo aquí: */
+.btn-secondary:hover {
+  background-color: var(--color-secondary-hover);
+}
+
+.btn-tertiary {
+  background-color: var(--color-tertiary);
+}
+.btn-tertiary:hover {
+  background-color: var(--color-tertiary-hover); /* Usando --color-tertiary-hover */
 }
 
 /* :root {
