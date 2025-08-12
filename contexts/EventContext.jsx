@@ -17,7 +17,7 @@ const EventProvider = ({ children }) => {
             setIsLoading(true)
             try {
 
-                const res = await fetch("http://localhost:4000/events");
+                const res = await fetch("https://689632ca039a1a2b2891bdd1.mockapi.io/api/events");
                 if (!res.ok) throw new Error("Failed to fecth events")
                 const data = await res.json()
                 setEvents(data);
