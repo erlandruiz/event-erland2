@@ -8,6 +8,22 @@ const EventProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
+    const [searchTerm, setSearchTerm] = useState("");
+
+    //aplicar filter despues del  summit 
+    const [appliedFilters, setAppliedFilters] = useState({
+        searchTerm: ""
+    })
+
+    //filtered events based on the  applied filters
+    const filteredEvents = useMemo(() => {
+        return events.filter((event) => {
+            //check search term
+            const matchesSearch = appliedFilters.searchTerm ? event.title.toLowerCase().includes(appliedFilters.searchTerm.toLowerCase()) : true;
+            return matchesSearch;
+        });
+    }, [events, appliedFilters])
+
     //fetch para Events
 
     useEffect(() => {
@@ -34,8 +50,25 @@ const EventProvider = ({ children }) => {
 
     }, [])
 
-    return(
-        <EventContext.Provider value={{ events }}>
+    const handleSubmit =()=>{
+        setAppliedFilters({searchTerm})
+        console.log(events)
+    }
+
+    const handleClearSearch =()=>{
+        setSearchTerm("")
+    }
+
+
+    return (
+        <EventContext.Provider value={{
+            events,
+            searchTerm,
+            setSearchTerm, 
+            filteredEvents,
+            handleSubmit,
+            handleClearSearch
+        }}>
             {children}
         </EventContext.Provider>
     )

@@ -1,15 +1,15 @@
 "use client"
 
-import { useContext } from "react"
-import { EventContext } from "@/contexts/EventContext"
+import Searchbar from "@/components/Searchbar/Searchbar"
+
+
 
 
 const Home = ()=>{
-const {events}=   useContext(EventContext)
-console.log(events)
+
   return (
-    <div>
-     HOME
+    <div >
+     <Searchbar/>
     </div>
   )
 }
