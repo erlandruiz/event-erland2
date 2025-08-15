@@ -39,6 +39,25 @@
 
   --color-grey: #737373;
 
+
+  /* Fondo */
+  /* --color-primary:#081023; */
+
+  /* Llamada a la acción y elementos importantes */
+  /* --color-accent:#e87c0a;
+  --color-accent-hover:#d17009; */
+
+  /* Fondos de secciones o tarjetas */
+  /* --color-secondary:#112042;
+  --color-secondary-hover:#1f2e4a; */
+
+  /* Fondos de elementos sutiles */
+  /* --color-tertiary:#313e54;
+  --color-tertiary-hover:#2a364a; */
+
+  /* Texto secundario y bordes */
+  /* --color-grey:#aeb5bf; */
+
   --bg-hero-1: url("/assets/hero/hero-bg1.png");
   --bg-hero-2: url("/assets/hero/hero-bg2.png");
   --bg-pattern: url("/assets/pattern_bg.png");

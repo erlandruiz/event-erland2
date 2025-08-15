@@ -22,7 +22,8 @@ const EventProvider = ({ children }) => {
             const matchesSearch = appliedFilters.searchTerm ? event.title.toLowerCase().includes(appliedFilters.searchTerm.toLowerCase()) : true;
             return matchesSearch;
         });
-    }, [events, appliedFilters])
+    }, [events, appliedFilters]);
+   
 
     //fetch para Events
 
@@ -52,7 +53,7 @@ const EventProvider = ({ children }) => {
 
     const handleSubmit =()=>{
         setAppliedFilters({searchTerm})
-        console.log(events)
+      
     }
 
     const handleClearSearch =()=>{
@@ -67,7 +68,9 @@ const EventProvider = ({ children }) => {
             setSearchTerm, 
             filteredEvents,
             handleSubmit,
-            handleClearSearch
+            handleClearSearch,
+            isLoading,
+            error
         }}>
             {children}
         </EventContext.Provider>
