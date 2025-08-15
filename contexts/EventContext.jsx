@@ -52,7 +52,12 @@ const EventProvider = ({ children }) => {
     }, [])
 
     const handleSubmit =()=>{
+        setIsLoading(true)
         setAppliedFilters({searchTerm})
+
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 7500);
       
     }
 

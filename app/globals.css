@@ -26,7 +26,7 @@
 }
 
 :root {
-  --color-primary: #0f1017;
+  /* --color-primary: #0f1017;
 
   --color-accent: #e14817;
   --color-accent-hover: #cb4419;
@@ -37,26 +37,26 @@
   --color-tertiary: #26272e;
   --color-tertiary-hover: #24252c;
 
-  --color-grey: #737373;
+  --color-grey: #737373; */
 
 
   /* Fondo */
-  /* --color-primary:#081023; */
+  --color-primary:#081023;
 
   /* Llamada a la acción y elementos importantes */
-  /* --color-accent:#e87c0a;
-  --color-accent-hover:#d17009; */
+  --color-accent:#e87c0a;
+  --color-accent-hover:#d17009;
 
   /* Fondos de secciones o tarjetas */
-  /* --color-secondary:#112042;
-  --color-secondary-hover:#1f2e4a; */
+  --color-secondary:#112042;
+  --color-secondary-hover:#1f2e4a;
 
   /* Fondos de elementos sutiles */
-  /* --color-tertiary:#313e54;
-  --color-tertiary-hover:#2a364a; */
+  --color-tertiary:#313e54;
+  --color-tertiary-hover:#2a364a;
 
   /* Texto secundario y bordes */
-  /* --color-grey:#aeb5bf; */
+  --color-grey:#aeb5bf;
 
   --bg-hero-1: url("/assets/hero/hero-bg1.png");
   --bg-hero-2: url("/assets/hero/hero-bg2.png");
@@ -146,6 +146,11 @@ h1,h2,h3,h4,h5,h6{
   background-color: var(--color-tertiary-hover); /* Usando --color-tertiary-hover */
 }
 
+
+/* Esto forzará que los componentes con la clase `skeleton-rounded-xl` tengan bordes grandes */
+.skeleton-rounded-xl {
+  border-radius: 0.75rem !important; /* Valor de rounded-xl en Tailwind */
+}
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

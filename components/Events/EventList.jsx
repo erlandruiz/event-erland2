@@ -1,6 +1,7 @@
 import { EventContext } from "@/contexts/EventContext";
 import { useContext } from "react";
 import Event from "./Event";
+import SkeletonGrid from "../SkeletonGrid";
 
 const EventList = () => {
   const { filteredEvents, isLoading, error } = useContext(EventContext);
@@ -14,16 +15,15 @@ const EventList = () => {
   }
 
   if (isLoading) {
-    return <div>Loading</div>;
+    return <SkeletonGrid itemCount={12}/>;
   } else {
     return (
       <div>
         {filteredEvents.map((filteredEvent, index) => {
           return (
             <div key={index}>
-              {/* <Event/> */}
-              {filteredEvent.title}
-              {console.log(filteredEvent)}
+              <Event event={filteredEvent}/>
+             
             </div>
           );
         })}
