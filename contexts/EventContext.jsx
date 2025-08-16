@@ -57,7 +57,7 @@ const EventProvider = ({ children }) => {
 
         setTimeout(() => {
             setIsLoading(false)
-        }, 7500);
+        }, 2500);
       
     }
 

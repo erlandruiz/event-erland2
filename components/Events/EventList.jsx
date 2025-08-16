@@ -15,18 +15,19 @@ const EventList = () => {
   }
 
   if (isLoading) {
-    return <SkeletonGrid itemCount={12}/>;
+    return <SkeletonGrid itemCount={12} />;
   } else {
     return (
       <div>
-        {filteredEvents.map((filteredEvent, index) => {
-          return (
-            <div key={index}>
-              <Event event={filteredEvent}/>
-             
-            </div>
-          );
-        })}
+        <div className="grid grid-cols-1 xl:grid-cols-4 gap-[30px] mb-32">
+          {filteredEvents.map((filteredEvent, index) => {
+            return (
+              <div key={index}>
+                <Event event={filteredEvent} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   }
