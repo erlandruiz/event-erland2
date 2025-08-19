@@ -2,13 +2,13 @@
   "events": [
     {
       "id": "1",
-      "type": "casco",
-     "img_sm": "https://res.cloudinary.com/erlandruiz/image/upload/v1755640867/cwqdsdhulcicevp77jxr.png",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/1-sm.png",
       "img_lg": "/assets/upcoming/img/music/1-lg.png",
       "date": "2026-02-05",
       "hour": "20:00",
-      "title": "Casco de seguridad Blanco",
-      "location": "Talara",
+      "title": "Rock Legends Live Concert",
+      "location": "Square Garden, New York",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -87,13 +87,13 @@
     },
     {
       "id": "2",
-      "type": "lentes",
-      "img_sm": "https://res.cloudinary.com/erlandruiz/image/upload/v1755643497/szjlob5hbb727zraur16.png",
+      "type": "music",
+      "img_sm": "/assets/upcoming/img/music/2-sm.png",
       "img_lg": "/assets/upcoming/img/music/2-lg.png",
       "date": "2026-02-05",
       "hour": "19:00",
-      "title": "Lentes de seguridad transparente",
-      "location": "Talara",
+      "title": "Jazz Night Live",
+      "location": "Blue Note, New York",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
