@@ -1,8 +1,11 @@
 "use client"
+import { EventContext } from "@/contexts/EventContext"
 
 import { useContext } from "react"
+
+//components
 import EventSearch from "./EventSearch"
-import { EventContext } from "@/contexts/EventContext"
+import EventLocation from "./EventLocation"
 
 const Searchbar =()=>{
 
@@ -12,13 +15,13 @@ return(
         {/* EventSearch */}
       <div><EventSearch/></div>
       {/* EventLocation */}
-      <div>Event Location</div>
+      <EventLocation/>
       {/* EventDate */}
       <div>Event Date</div>
       {/* EventType */}
       <div>Event Type</div>
       {/* button submit */}
-      <button onClick={handleSubmit} className="btn bg-[var(--color-accent)]">Submit</button>
+      <button onClick={handleSubmit} className="btn bg-[var(--color-accent)]">Consultar</button>
     </div>
 )
 }

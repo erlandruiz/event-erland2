@@ -8,7 +8,7 @@
       "date": "2026-02-05",
       "hour": "20:00",
       "title": "Casco de seguridad Blanco",
-      "location": "Talara",
+      "location": "Talara-Perú",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -93,7 +93,7 @@
       "date": "2026-02-05",
       "hour": "19:00",
       "title": "Lentes de seguridad transparente",
-      "location": "Talara",
+      "location": "Talara-Perú",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
       "seats": [
         {
@@ -172,13 +172,13 @@
     },
     {
       "id": "3",
-      "type": "art",
-      "img_sm": "/assets/upcoming/img/art/3-sm.png",
+      "type": "guantes",
+      "img_sm": "https://res.cloudinary.com/erlandruiz/image/upload/v1755644108/tfpfugu3vablcawqvb3k.png",
       "img_lg": "/assets/upcoming/img/art/3-lg.png",
       "date": "2026-02-20",
       "hour": "10:00",
-      "title": "Street Art Festival",
-      "location": "Art District, Berlin",
+      "title": "Guantes de seguridad naranjas",
+      "location": "Talara-Perú",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
       "seats": [
         {

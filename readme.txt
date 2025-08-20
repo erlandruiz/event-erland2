@@ -14,6 +14,12 @@ npm run dev
 # para instalar los datos al MockAPI es 
  node upload.js
 
+
+medidas de img_sm (1-sm)= 400x278 en png hacerlo con iloveimg
+
+01:39 
+
+
 data para instalar
 npx shadcn@latest init
 npm i swiper react-icons
