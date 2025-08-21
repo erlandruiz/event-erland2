@@ -11,12 +11,12 @@ const EventProvider = ({ children }) => {
 
   //Ingresos de filtros actuales
   const [searchTerm, setSearchTerm] = useState("");
-  const [selectedLocation, setSelectedLocation] = useState("")
+  const [selectedLocation, setSelectedLocation] = useState("");
 
   //aplicar filter despues del  summit
   const [appliedFilters, setAppliedFilters] = useState({
     searchTerm: "",
-    selectedLocation:""
+    selectedLocation: "",
   });
 
   //filtered events based on the  applied filters
@@ -28,7 +28,13 @@ const EventProvider = ({ children }) => {
             .toLowerCase()
             .includes(appliedFilters.searchTerm.toLowerCase())
         : true;
-      return matchesSearch;
+
+      //chequea locaciones
+      const matchesLocation = appliedFilters.selectedLocation
+        ? event.location.toLowerCase() ===
+          appliedFilters.selectedLocation.toLowerCase()
+        : true;
+      return matchesSearch && matchesLocation;
     });
   }, [events, appliedFilters]);
 
@@ -58,8 +64,8 @@ const EventProvider = ({ children }) => {
 
   const handleSubmit = () => {
     setIsLoading(true);
-    setShowEventList(true)
-    setAppliedFilters({ searchTerm , selectedLocation});
+    setShowEventList(true);
+    setAppliedFilters({ searchTerm, selectedLocation });
 
     setTimeout(() => {
       setIsLoading(false);
@@ -69,7 +75,7 @@ const EventProvider = ({ children }) => {
   const handleClearSearch = () => {
     setSearchTerm("");
     setShowEventList(false);
-    setSelectedLocation("")
+    setSelectedLocation("");
   };
 
   return (
@@ -85,7 +91,7 @@ const EventProvider = ({ children }) => {
         error,
         showEventList,
         selectedLocation,
-        setSelectedLocation
+        setSelectedLocation,
       }}
     >
       {children}

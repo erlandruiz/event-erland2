@@ -1,8 +1,21 @@
 import { EventContext } from "@/contexts/EventContext";
 import { useContext } from "react";
 
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectScrollDownButton,
+  SelectScrollUpButton,
+  SelectSeparator,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 const EventLocation = () => {
-  const { events, setSelectedLocation, selectedLocation } =
+  const { events, selectedLocation, setSelectedLocation } =
     useContext(EventContext);
   //Genera una lista  unica de locaciones de futuros eventos
 
@@ -28,13 +41,44 @@ const EventLocation = () => {
           return false;
         })
         .map((event) => {
-          return event.location;//extrae  la loacion  de cada evento 
+          return event.location; //extrae  la loacion  de cada evento
         })
     ),
   ];
   console.log(uniqueLocations);
 
-  return <div>EventLocation</div>;
+  return (
+    <div>
+      {/* icon */}
+      <div></div>
+      <Select
+        value={selectedLocation}
+        onValueChange={(value) => {
+          return setSelectedLocation(value);
+        }}
+      >
+        <SelectTrigger className="bg-transparent border-none focus:ring-0 focus:ring-offset-0 text-left p-0">
+          <SelectValue placeholder="Ubicación del producto" />
+        </SelectTrigger>
+        <SelectContent>
+          {/* <SelectGroup className="bg-[var(--color-accent)]"> */}
+          <SelectGroup>
+            <SelectLabel>Ubicación</SelectLabel>
+            {uniqueLocations.map((uniqueLocation, index) => {
+              return (
+                <SelectItem
+                  value={uniqueLocation === "Todos" ? null : uniqueLocation}
+                  key={index}
+                >
+                  {uniqueLocation}
+                </SelectItem>
+              );
+            })}
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+    </div>
+  );
 };
 
 export default EventLocation;

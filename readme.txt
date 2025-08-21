@@ -17,7 +17,7 @@ npm run dev
 
 medidas de img_sm (1-sm)= 400x278 en png hacerlo con iloveimg
 
-01:39 
+01:48
 
 
 data para instalar
